@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacion Web</title>
+    <link rel="stylesheet" href="assets/estilos.css">
+</head>
+
+<div class="contenedorCargando" id="contenedorCargando">
+    <div class="carga"></div>
+</div>
+<div class="imgGrande" id="imgGrandeBox">
+    <img src="assets/img/html.jpg" id="imgGrd" alt="">
+    <span onclick="cerrarImg()">X</span>
+</div>
+<div class="presentacion">
+<h1>¿Desarrollo Web full stack?</h1>
+<p>El desarrollador web full stack puede crear aplicaciones web dinámicas. Esto se logra en base a los estándares web y utilizando tecnologías web que pueden variar según la pila de desarrollo. Tiene por objetivo la creación de aplicaciones web dinámicas. Como vimos anteriormente, las aplicaciones web dinámicas modifican su contenido en función del usuario que acceden permitiendo mostrar uno u otro contenido dependiendo del usuario y de su interacción para con la aplicación web (ej. Facebook, Instagram, etc.) mientras que las aplicaciones web estáticas muestra siempre el mismo contenido independientemente del usuario visitante (ej. un blog).</p>
+<h2>¿Qué son los Stacks?</h2>
+<p>Lo que denominamos stack tecnológico, o también denominado stack de soluciones o ecosistema de datos, es un conjunto de todas las herramientas tecnológicas utilizadas para construir y ejecutar una sola aplicación. </p>
+<h2>¿Qué es Frond-end?</h2>
+<p>FrontEnd</p> 
+<p>Estructura y estilos: HTML, CSS o framework como Bootstrap</p>
+<p> Lenguaje programación: JavaScript, java, PHP o bien pueden ser framework  como Angular</p>
+<h2>¿Qué es Back-end?</h2>
+<p>Backend</p>
+<p>El Backend es aquello que se encuentra del lado del servidor y se encarga de interactuar con bases de datos, verificar maniobras de sesiones de usuarios, montar la página en un servidor y servir todas las vistas creadas por el desarrollador frontend.</p>
+<p>Base de datos: puede ser MySQL, PostgreSQL, etc
+    Lenguaje: Java, PHP, etc
+    Web server: Apache, NGINX, etc</p>
+    <h2>¿Qué significa ser un desarrollador full stack?</h2>
+    <p>El desarrollador full stack es un perfil que tiene conocimiento de lenguajes de programación de Front End, Back End, APIs y Bases de datos. Esta amplitud de conocimiento es muy buscada hoy en día por las empresas, esto significa que al momento de trabajar en un proyecto podrías estar asignado a cualquiera de esas áreas.</p>
+</div>
+<h1>LOS LENGUAJES CON LOS QUE VAMOS A TRABAJAR</h1>
+<div class="imgGallery">
+    <img src="assets/img/HTML.jpg" onclick="abrirImgGrande(this.src)" alt="">
+    <img src="assets/img/CSS (2).jpg" onclick="abrirImgGrande(this.src)" alt="">
+    <img src="assets/img/javascript.jpg" onclick="abrirImgGrande(this.src)" alt="">
+    <img src="assets/img/angular.jpg" onclick="abrirImgGrande(this.src)" alt="">
+    <img src="assets/img/react (2).jpg" onclick="abrirImgGrande(this.src)" alt="">
+    <img src="assets/img/nodeJs.jpg" onclick="abrirImgGrande(this.src)" alt="">
+</div>
+<!--CARGA-->
+<script src="galeria.js"></script>
+<script>window.onload = function () {
+        var contenedor = document.getElementById('contenedorCargando');
+        contenedor.style.visibility = 'hidden';
+        contenedor.style.opacity = '0';
+    }
+</script>
+<!--HTML CONTENIDO-->
+<!--QUE ES HTML-->
+<div class="contenedoresLenguajes">
+    <!--APARTADO HTML-->
+    <div class="contenedor HTML">
+        <section class="HTML">
+            <h2 >¿Qué es <span> HTML?</span></h2>
+            <img class="imgHTML" src="assets/img/2.jpg" alt="">
+            <p>Por sus siglas en inglés HTML (Hypertext Markup Language) se lo define como un lenguaje de
+                marcado estándar que nos permite crear y presentar páginas web de una manera versátil y eficiente.</p>
+            <P>HTML es un lenguaje y como tal tiene su propio vocabulario (palabras) y su propia gramática
+                (reglas).</P>
+            <p>HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un
+                navegador Web. Las marcas HTML incluyen "elementos" especiales como head, title,body, header, footer,
+                article, section, p,
+                div, span, img, aside, audio, canvas, datalist, details, embed, nav, output, progress, video, ul, ol ,
+                li y
+                muchos otros.</p>
+            <p>Si quieres especificar que se trata de un párrafo, podrías encerrar el texto con la
+                etiqueta de
+                párrafo. Veamos un ejemplo y su anatomía en la siguiente imagen</p>
+            <img class="imgLenguajes" src="assets/img/html/lenguajes 1 html.jpg" alt="">
+        </section>
+
+        <!--EDITORES DE CODIGO Y INSTALACION-->
+        <section class="editor">
+            <h2 class="titulo"><span> ¿Dónde escribo el HTML?</span></h2>
+            <p>Vamos a hablar un poco de los <b>editores de código</b></p>
+            <p>Existen muchos editores de código, pero aquí recomendamos algunos, como por ejemplo, Visual Studio Code, Sublime Text, Notepad + + y Atom, entre otros. </p>
+            <p>Nosotros nos centraremos y utilizaremos para los ejemplos del editor de código a Visual Studio Code. Este editor de código es gratuito, estable, open source, robusto y posee una buena velocidad de trabajo. Estas son algunas de las principales características de Visual Studio Code que es desarrollado y mantenido por Microsoft. A continuación veremos brevemente cómo instalarlo:</p>
+            <p>1. Desde la pagina oficial de <a href="https://code.visualstudio.com/">Visual Studio Code</a> descargaremos el archivo para la instalación según el sistema operativo que utilicemos.En este caso mostraremos cómo hacerlo en Windows.</p>
+            <img class="imgHTML" src="assets/img/html/vsc1.png" alt="">
+            <p>2. Una vez descargado el archivo, hacemos clic en la barra inferior a la izquierda,donde se descargó el archivo .exe y ejecutamos el mismo.</p>
+            <img class="imgHTML" src="assets/img/html/vsc2.png" alt="">
+            <p>3.Se abrirá un cuadro de diálogo y procederemos a la instalación hasta llegar a la finalización de la misma.</p>
+            <p>4. Luego, una vez instalado procederemos a abrir la aplicación:</p>
+            <img class="imgHTML" src="assets/img/html/vsc3.png" alt="">
+        </section>
+
+        <!--ESTRUCTURA HTML-->
+        <section class="estructuraHTML">
+            <h2 class="titulo"><span>Estructura básica de una página HTML</span></h2>
+            <p>La siguiente figura es una visualización abstracta de la estructura de una página HTML.En ella podemos observar lo que representa cada etiqueta y el contenido de texto que mostraría cadaelemento. También podemos visualizar mejor la analogía con la estructura de cajas de cartón.</p>
+            <img class="imgHTML" src="assets/img/html/estructura1.jpg" alt="">
+            <h3>Elemento HTML < section></h3>
+            <p>El elemento <b>section</b> define una sección en un documento. Según la documentación HTML del W3C: " Una sección es una agrupación temática de contenido, normalmente con un encabezado ". Una página web normalmente se puede dividir en secciones para la introducción, el contenido y la información de contacto.</p>
+            <h3>Elemento HTML < article> </h3>
+            <p>El elemento <b>artcicle</b> especifica contenido autónomo e independiente. Un artículo debe tener sentido por sí solo y debe ser posible distribuirlo independientemente del resto del sitio web.</p>
+            <h3>Elemento HTML < header></h3>
+            <p>El elemento <b>header</b> sirve para especificar contenido de tipo introductorio o un conjunto de enlaces de navegación..</p>
+            <h3>Elemento HTML < footer> </h3>
+            <p>El elemento <b>hfooter</b> define un pie de página para un documento o sección.</p>
+            <h3>Elemento HTML < nav></h3>
+            <p>El elemento <b>nav</b> representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o en otros documentos. Ejemplos comunes de secciones de navegación son: menús, tablas de contenido e índices. </p>
+            <h3>Elemento HTML < aside></h3>
+            <p>El elemento <b>aside</b> representa una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados . </p>
+        </section>
+    </div>
+    <div class="contenedor CSS">
+        <section class="css" id="css">
+            <h2 class="titulo"><span>Introducción CSS</span></h2>
+            <h3 class="subtitulo">¿Qué es CSS?</h3>
+            <img class="imgHTML"  src="assets/img/3.jpg" alt="">
+            <p>Css es un leguaje que trabaja junto con HTML para proporcionar estilos visuales a los elementos de un documento web. Es utilizado para Para definir estilos en los documentos web, incluyendo el diseño, la disposición de los elementos y para responder a las variaciones en la pantalla en cuanto a diferentes dispositivos y tamaños de pantalla.</p>
+            <p> <b>Características:</b></p>
+            <p> .- Ahorra trabajo. Se puede controlar el diseño de varias páginas HTML a la vez.</p>
+            <p> .- Se pueden almacenar en archivos * .css</p>
+           
+            <h3 class="subtitulo">Reglas</h3>
+            <p class="">CSS define un conjunto de reglas que permiten describir cada una de las partes que componen los estilos CSS.</p>
+            <img class="imgHTML" src="assets/img/css/DECLARACION.jpg" alt="">
+            <p><b>Selector</b> Indica el elemento o elementos HTML a los que se aplica la regla CSS.</p>
+            <p><b>Declaración</b> Especifica los estilos que se aplican a los elementos.</p>
+            <p><b>Propiedad</b> Permite modificar el aspecto de una característica del elemento.</p>
+            <p><b>Valor</b> Indica el nuevo valor de la característica modificada en el elemento.</p>
+
+            <h3>SELECTORES</h3>
+            <p>Nos indican qué elemento HTML hay que aplicar el estilo. Una misma regla puede aplicar a varios selectores y, a un mismo selector se le pueden aplicar varias reglas.</p>
+            <h3 class="subtitulo">Selectores básicos</h3>
+            <p><b>Selectores básicos:</b>  se utiliza para seleccionar todos los elementos de la página:</p>
+            <img class="imgHTML" src="assets/img/css/2.png" alt="">
+            <p><b>Selector de tipo o etiqueta:</b>selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del selector:</p>
+            <h3 class="subtitulo">Selectores básicos</h3>
+            <p><b>Selectores básicos</b>: se utiliza para seleccionar todos los elementos de la página:</p>
+            <img src="assets/img/css/3.png" alt="">
+
+            <h3>SELECTOR DESCENDENTE</h3>
+            <P>Selecciona los elementos que se encuentran dentro de otros elementos. Un elemento es descendente de otro cuando se encuentra entre las etiquetas de apertura y de cierre de otro elemento.</P>
+            <img src="assets/img/css/4.png" alt="">
+            <p>La sintaxis formal del selector descendente se muestra a continuación:</p>
+            <p><b>elemento1 elemento2 elemento3 ... elementoN</b></p>
+            <img src="assets/img/css/5.png" alt="">
+            <p>Si el código HTML de la página es el siguiente:</p>
+            <img src="assets/img/css/6.png" alt="">
+            <p>El selector p span selecciona tanto texto1 como texto2. El motivo es que en el selector descendente, un elemento no tiene que ser descendiente directo del otro. La única condición es que un elemento debe estar dentro de otro elemento, sin importar el nivel de profundidad en el que se encuentre.</p>
+            <p>Los selectores descendentes nos permiten aumentar la precisión del selector de tipo o etiqueta. Así, utilizando el selector descendente podemos aplicar diferentes estilos a los elementos del mismo tipo.</p>
+
+            <h3>SELECTOR DE CLASE O SELECTOR CLASS</h3>
+            <P>Si consideramos el siguiente código HTML de ejemplo:</P>
+            <img src="assets/img/css/7.png" alt="">
+            <p><b>¿Cómo podemos aplicar estilos CSS sólo al primer párrafo? </b></p>
+            <p>El selector universal (*) no se puede utilizar porque seleccionaría todos los elementos de la página. El selector de tipo o etiqueta (p) tampoco se puede utilizar porque seleccionaría todos los párrafos. Por último, el selector descendente (body p) tampoco se puede utilizar porque todos los párrafos se encuentran en el mismo sitio.</p>
+            
+            <h3>Selectores de ID</h3>
+            <p>El selector de ID permite seleccionar un elemento de la página a través del valor de su atributo id.Su sintaxis de los selectores de ID es muy parecida a la de los selectores de clase, salvo que se utiliza el símbolo numeral(#)</p>
+            <p>En html</p>
+            <img src="assets/img/css/8.png" alt="">
+            <p>En css</p>
+            <img src="assets/img/css/9.png" alt="">
+
+
+            
+            
+
+        </section>
+    </div>
+ <div class="contenedor JS">
+    <section class="js" id="js">
+        <h2>Introducción a JavaScript</h2>
+        <p>Es un lenguaje de scripting multiplataforma y orientado a objetos. Es un lenguaje pequeño y liviano. Dentro de un ambiente de host, JavaScript puede conectarse a los objetos de su ambiente y proporcionar control programático sobre ellos. Se trata de un lenguaje de programación tipo script, basado en objetos y guiado por eventos, diseñado específicamente para el desarrollo de aplicaciones cliente-servidor dentro del ámbito de Internet.</p>
+        <h3>Sintaxis de JavaScript</h3>
+        <p><b>avascript es un lenguaje que distingue entre mayúsculas y minúsculas</b></p>
+        <p>Existen dos formas de realizar comentarios: MultiLine o SingleLine. Para el caso de multilínea se utilizan los caracteres “/ *” y “* /” por ejemplo:</p>
+        <p> / * Esto es un comentario</p>
+        <p>      multilínea * /</p>
+        <p>/ Esto es un comentario de una sola línea.</p>
+        <P>Hola mundo en JavaScript</P>
+        <p>Como escribir nuestra primer linea de codigo en JavaScript</p>
+        <img src="assets/img/js/1.jpg" alt="">
+
+        <h3>Tipos de datos en JavaScript</h3>
+        <p><b>Booleano:</b> tipo de instancia === "booleano"</p>
+        <p><b>Número:</b>  tipo de instancia === "número"</p>
+        <p><b>Indefinido:</b> tipo de instancia === "indefinido"</p>
+        <p><b>Cadena:</b> tipo de instancia === "cadena"</p>
+        <p><b>BigInt</b> tipo de instancia === "bigint</p>
+        <p><b>Símbolo:</b> tipo de instancia === "símbolo"</p>
+        <p><b>Nulo:</b> tipo de instancia === "objeto". Tipo primitivo especial que tiene un uso adicional para su valor: si el objeto no se hereda, se muestra null."</p>
+        <p><b>Objeto:</b> tipo de instancia === "objeto". Tipo estructural especial que no es de datos pero para cualquier instancia de objeto construido que también se utiliza como estructuras de datos: new Object, new Array, new Map, new Set, new WeakMap, new WeakSet, new Date y casi todo lo hecho con la palabra clave nuevo</p>
+        <p><b>Funcion:</b>una estructura sin datos, aunque también respondió al operador typeof: typeof instance === "function". Esta simplemente es una forma abreviada para funciones, aunque cada constructor de funciones se deriva del constructor Object.</p>
+
+        <h3>DECLARAR VARIABLES EN JAVASCRIPT</h3>
+        <p>Declarar significa dar un valor</p>
+        <p>1. Usando var: declara una variable, inicializándola opcionalmente a un valor. Si bien esta ha sido exclusivamente la forma de declarar variables durante mucho tiempo, sufre de unos efectos no deseados en el alcance (scope) de la declaración. En otras palabras, se aconseja no continuar utilizándola ya que el nuevo estándar de javascript permite otras formas de declaración que corrigen este problema.</p>
+        <p>El alcance o bloque de ámbito es el lugar en donde es visible esa variable. Por ejemplo, si se declara una variable dentro de una función, esta variable mantiene su valor y es visible sólo dentro de una función.</p>
+        <p>2. Usando let: declara una variable local en un bloque de ámbito (scope), inicializándola opcionalmente a un valor.</p>
+        <p>3. Usando const: declara una constante de sólo lectura en un bloque de ámbito. Una constante funciona como una variable pero no cambia su valor, es decir, representa un lugar de almacenamiento de tipos de datos en la memoria pero una vez asignado el valor inicial este no puede ser modificado. La sintaxis de la definición del identificador es la misma que la de las variables.</p>
+        <p>Las variables se usan como nombres simbólicos para valores en tu aplicación. Los nombres de las variables, llamados identificadores, se rigen por ciertas reglas. Un identificador en JavaScript tiene que empezar con una letra, un guion bajo (_) o un símbolo de dólar ($). Los valores subsiguientes pueden ser números. Debido a que JavaScript diferencia entre mayúsculas y minúsculas, las letras incluyen tanto desde la "A" hasta la "Z" (mayúsculas) como de la "a" hasta la "z". Por ejemplo:</p>
+
+
+
+    </section>
+ </div>
+</div>
+</body>
+
+</html>
